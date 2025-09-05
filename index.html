@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plant‑Based Eating — A Gentle Introduction</title>
+  <meta name="description" content="A clean, single‑page introduction to plant‑based eating: what it is, key benefits, nutrients to watch, quick tips, and references." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f172a;        /* slate-900 */
+      --panel:#0b1224;     /* slightly darker */
+      --card:#111a33;      /* card */
+      --text:#e2e8f0;      /* slate-200 */
+      --muted:#94a3b8;     /* slate-400 */
+      --accent:#22c55e;    /* green-500 */
+      --accent-2:#86efac;  /* green-300 */
+      --link:#93c5fd;      /* blue-300 */
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 18px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;scroll-behavior:smooth;background:linear-gradient(180deg,var(--bg),#0a1020 60%, #030712 100%);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif}
+    header{
+      position:relative;padding:72px 18px 36px;overflow:hidden;text-align:center
+    }
+    header::before{
+      content:"";position:absolute;inset:-20% -10% auto -10%;height:240px;filter:blur(60px);background:radial-gradient(1200px 240px at 50% 0, rgba(34,197,94,.35), transparent 60%), radial-gradient(900px 200px at 20% 20%, rgba(99,102,241,.25), transparent 60%), radial-gradient(600px 180px at 80% 10%, rgba(14,165,233,.25), transparent 60%);
+      z-index:0
+    }
+    .container{max-width:1050px;margin:0 auto;padding:0 18px}
+    .title{position:relative;z-index:1;font-size:clamp(28px,4vw,44px);line-height:1.1;font-weight:800;letter-spacing:-.02em;margin:0}
+    .subtitle{position:relative;z-index:1;margin:10px auto 0;max-width:800px;color:var(--muted);font-size:clamp(14px,2.2vw,18px)}
+    nav{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:26px 0 8px}
+    nav a{display:inline-block;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.06);color:var(--text);text-decoration:none;border:1px solid rgba(255,255,255,.08)}
+    nav a:hover{background:rgba(255,255,255,.12)}
+
+    section{padding:28px 0}
+    .grid{display:grid;gap:18px}
+    @media(min-width:800px){.grid{grid-template-columns:repeat(3,1fr)}}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    .card h3{margin:0 0 6px;font-size:20px}
+    .pill{display:inline-block;font-size:12px;color:#052e16;background:linear-gradient(180deg,var(--accent-2),#6ee7b7);padding:6px 10px;border-radius:999px;font-weight:700}
+    .lead{font-size:18px;line-height:1.6}
+    ul{margin:10px 0 0 20px}
+    li{margin:6px 0}
+    .kbd{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,"Liberation Mono","Courier New",monospace;font-size:12px;background:#0a0f1d;border:1px solid rgba(255,255,255,.08);padding:2px 6px;border-radius:6px}
+    .callout{border-left:4px solid var(--accent);padding:14px 14px 14px 18px;background:rgba(34,197,94,.06);border-radius:12px;margin:10px 0}
+    .refs{font-size:14px;color:var(--muted)}
+    footer{padding:28px 0 60px;color:var(--muted)}
+    a{color:var(--link)}
+    .taglist{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .tag{border:1px dashed rgba(255,255,255,.2);padding:6px 10px;border-radius:999px;font-size:12px}
+    .small{font-size:13px;color:var(--muted)}
+    .btn{display:inline-block;margin-top:10px;padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.15);text-decoration:none}
+    .btn:hover{background:rgba(255,255,255,.08)}
+    code{background:#0b1020;border:1px solid rgba(255,255,255,.08);padding:2px 6px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <p class="pill">Quick Guide</p>
+      <h1 class="title">Plant‑Based Eating: A Friendly Introduction</h1>
+      <p class="subtitle">Plant‑based (aka plant‑forward) eating focuses on foods that come primarily from plants — vegetables, fruits, whole grains, legumes, nuts, and seeds. You can eat this way whether you’re fully vegan/vegetarian or simply choosing more plant foods most of the time.</p>
+      <nav>
+        <a href="#what">What it is</a>
+        <a href="#benefits">Why it helps</a>
+        <a href="#nutrients">Nutrients to watch</a>
+        <a href="#start">How to start</a>
+        <a href="#refs">References</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="what">
+      <div class="card">
+        <h2>What exactly is a plant‑based diet?</h2>
+        <p class="lead">It’s an <strong>eating pattern centered on plants</strong>. Most meals are built from whole or minimally processed plant foods. Some people avoid all animal products (vegan), others include dairy/eggs (vegetarian), and many follow a <em>plant‑forward</em> style that still allows occasional animal foods.</p>
+        <div class="taglist">
+          <span class="tag">Vegetables &amp; fruits</span>
+          <span class="tag">Whole grains</span>
+          <span class="tag">Beans &amp; lentils</span>
+          <span class="tag">Nuts &amp; seeds</span>
+          <span class="tag">Olive/seed oils (in moderation)</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits">
+      <div class="grid">
+        <article class="card">
+          <h3>Health</h3>
+          <p>Large reviews suggest well‑planned vegetarian/vegan patterns can be <strong>nutritionally adequate</strong> for adults and are linked with better cardiometabolic outcomes (e.g., heart health).*</p>
+          <ul>
+            <li>Higher fiber, potassium, and phytonutrients</li>
+            <li>Often lower in saturated fat and energy density</li>
+          </ul>
+          <p class="small">* See Academy of Nutrition &amp; Dietetics position statements in the references.</p>
+        </article>
+        <article class="card">
+          <h3>Environment</h3>
+          <p>Shifting towards plant‑rich diets can <strong>reduce food‑system emissions</strong> and land use compared with meat‑heavy patterns, especially when emphasizing minimally‑processed plant foods.</p>
+          <ul>
+            <li>Helps lower GHG emissions from livestock</li>
+            <li>Supports more sustainable land and water use</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Budget &amp; Variety</h3>
+          <p>Staples like beans, lentils, grains, and seasonal produce are typically <strong>affordable</strong> and work across regional cuisines (dal, chana, rajma, sambar, stir‑fries, grain bowls, salads).</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="nutrients">
+      <div class="card">
+        <h2>Nutrients to pay attention to</h2>
+        <p>Plant‑based diets can meet needs when planned well. These are worth a quick check, especially for stricter vegan patterns:</p>
+        <ul>
+          <li><strong>Vitamin B12</strong> — use fortified foods or a supplement if you avoid animal products.</li>
+          <li><strong>Iron</strong> — include legumes, whole grains, nuts, seeds, greens; pair with vitamin‑C foods to aid absorption.</li>
+          <li><strong>Vitamin D &amp; Calcium</strong> — fortified foods and sun exposure for D; tofu set with calcium salts, greens, fortified plant milks for calcium.</li>
+          <li><strong>Iodine &amp; Selenium</strong> — consider iodised salt; include nuts/seeds and varied grains/legumes.</li>
+          <li><strong>Omega‑3 (ALA)</strong> — flaxseed, chia, walnuts; consider algae‑based DHA/EPA if needed.</li>
+        </ul>
+        <div class="callout">
+          <strong>Tip:</strong> A simple multiday rotation of legumes (e.g., chickpeas ▶ lentils ▶ kidney beans), whole grains (brown rice ▶ millet ▶ whole‑wheat roti), and colorful veg covers most bases.
+        </div>
+      </div>
+    </section>
+
+    <section id="start">
+      <div class="grid">
+        <div class="card">
+          <h3>Quick Start (3 steps)</h3>
+          <ol>
+            <li><strong>Build your plate:</strong> 
+              <span class="small">½ veg &amp; fruit • ¼ whole grains • ¼ protein (beans/lentils/tofu) + a little healthy fat.</span>
+            </li>
+            <li><strong>Swap smart:</strong> Use beans or tofu in your favorite curry, tacos, or stir‑fry; try a grain bowl for lunch.
+            </li>
+            <li><strong>Stock the basics:</strong> Lentils, chickpeas, kidney beans, oats, brown rice, millet, nuts, seeds, spices.
+            </li>
+          </ol>
+        </div>
+        <div class="card">
+          <h3>1‑Day Sample Menu</h3>
+          <ul>
+            <li><strong>Breakfast:</strong> Oats with banana, nuts, and seeds</li>
+            <li><strong>Lunch:</strong> Brown rice + chana masala + salad</li>
+            <li><strong>Snack:</strong> Fruit + roasted chana/peanuts</li>
+            <li><strong>Dinner:</strong> Vegetable stir‑fry with tofu and whole‑wheat roti</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Developer Note</h3>
+          <p>You can drop this file into your <code>HTML Tutorial</code> folder and open it in your browser. Tweak the content, colors, or sections as needed. No external build tools are required.</p>
+          <a class="btn" href="#" onclick="window.scrollTo({top:0, behavior:'smooth'});return false;">Back to top ↑</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="refs">
+      <div class="card refs">
+        <h2>References</h2>
+        <ul>
+          <li>Harvard Health Publishing. "What is a plant‑based diet and why should you try it?" (updated Mar 28, 2024). <a href="https://www.health.harvard.edu/blog/what-is-a-plant-based-diet-and-why-should-you-try-it-2018092614760" target="_blank" rel="noopener">health.harvard.edu</a></li>
+          <li>Academy of Nutrition and Dietetics. Position Paper (2025): "Vegetarian Dietary Patterns for Adults." <a href="https://www.jandonline.org/article/S2212-2672(25)00042-5/fulltext" target="_blank" rel="noopener">jandonline.org</a> / PubMed summary: <a href="https://pubmed.ncbi.nlm.nih.gov/39923894/" target="_blank" rel="noopener">pubmed.ncbi.nlm.nih.gov</a></li>
+          <li>NHS (UK). Guidance for vegan and vegetarian diets (accessed 2025). <a href="https://www.nhs.uk/live-well/eat-well/how-to-eat-a-balanced-diet/the-vegan-diet/" target="_blank" rel="noopener">nhs.uk</a></li>
+          <li>IPCC SRCCL (2019). Food, land, and climate — dietary shifts and emissions. <a href="https://www.ipcc.ch/srccl/chapter/chapter-5/" target="_blank" rel="noopener">ipcc.ch</a></li>
+          <li>Harvard T.H. Chan School of Public Health (2022). Healthy plant‑based diets have lower environmental impacts. <a href="https://hsph.harvard.edu/news/healthy-plant-based-diets-better-for-the-environment-than-less-healthy-plant-based-diets/" target="_blank" rel="noopener">hsph.harvard.edu</a></li>
+        </ul>
+        <p class="small">Always consider personal dietary needs and consult a qualified professional for individual advice.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>© 2025 • Plant‑Based Intro Page • Built with semantic HTML + a dash of CSS.</p>
+  </footer>
+</body>
+</html>
